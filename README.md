@@ -1,3 +1,4 @@
+![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/KOMOOOTER_A.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/02_OSW.png?raw=true "Komoooter")
 
 # komoooter
@@ -7,7 +8,12 @@ Full tutorial can be found here:
 
 https://niutonian.com/komoooter
 
+
+
+![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/KOMOOOT_B.png?raw=true "Komoooter")
+![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/OSW_A.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/03_OSW.png?raw=true "Komoooter")
+
 
 Special thanks to:
 
