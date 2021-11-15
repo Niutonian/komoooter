@@ -1,3 +1,4 @@
+![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/WAITING.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/KOMOOOTER_A.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/02_OSW.png?raw=true "Komoooter")
 
