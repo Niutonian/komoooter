@@ -1,6 +1,5 @@
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/WAITING.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/KOMOOOTER_A.png?raw=true "Komoooter")
-![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/02_OSW.png?raw=true "Komoooter")
 
 # komoooter
 The Komooter is a nifty little turn-by-turn navigation system created by @Jstiefel. This open-source gadget makes your cycling sessions safer by displaying the route you have set in your Komoot app in a non-distracting manner.
@@ -13,6 +12,7 @@ https://niutonian.com/komoooter
 
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/KOMOOOT_B.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/OSW_A.png?raw=true "Komoooter")
+![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/02_OSW.png?raw=true "Komoooter")
 ![Komoooter](https://github.com/Niutonian/komoooter/blob/main/PICTURES/03_OSW.png?raw=true "Komoooter")
 
 
