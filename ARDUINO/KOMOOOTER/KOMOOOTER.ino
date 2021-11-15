@@ -1,9 +1,11 @@
 
 /**
-   adapted from palto42's code for the ssd1306 display https://github.com/palto42/komoot-navi
-  Forked from @spattinson https://github.com/spattinson/komoot-eink-navigator
-
+ * Komoooter project by @Niutonian
+ * https://niutonian.com/komoooter
+ * adapted from palto42's code for the ssd1306 display https://github.com/palto42/komoot-navi
+ * Forked from @spattinson https://github.com/spattinson/komoot-eink-navigator
 */
+
 #include <SPI.h> // Included for SFE_LSM9DS0 library
 #include <TFT_eSPI.h> // Graphics and font library for ILI9341 driver chip
 //#include <BfButton.h>
@@ -11,8 +13,8 @@
 #include "esp_adc_cal.h"
 #include <driver/adc.h>
 
-//#define OSW // tft_eSPI >> #include <User_Setups/Setup46_GC9A01_ESP32.h>
-#define TTGO_DISPLAY  //tft_eSPI >> #include <User_Setups/Setup25_TTGO_T_Display.h> 
+#define OSW // tft_eSPI >> #include <User_Setups/Setup46_GC9A01_ESP32.h>
+//#define TTGO_DISPLAY  //tft_eSPI >> #include <User_Setups/Setup25_TTGO_T_Display.h>
 
 #include "rider.h"
 #include "symbols.h"
@@ -263,7 +265,7 @@ void btNotFound() {
 //DIRECTION DISPLAY SYMBOLS
 void showPartialUpdate_dir(uint8_t dir) {
 #if defined( OSW)
-  tft.fillRect(0, 0, 240, 70, TFT_WHITE );
+  tft.fillRect(0, 0, 240, 65, TFT_WHITE );
   tft.drawBitmap(95, 0, symbols[dir].bitmap, 60, 60, 0);
 #elif defined( TTGO_DISPLAY)
   tft.fillRect(0, 0, 80, 60, TFT_WHITE );
@@ -278,8 +280,8 @@ void showPartialUpdate_street(std::string street, std::string old_street ) {
   tft.setTextDatum(MC_DATUM);
 #if defined( OSW)
   tft.fillRect(0, 110, 240, 80, TFT_BLACK);
-  tft.drawString(old_street.c_str(), 120, 130, GFXFF); // old street
-  tft.drawString(street.c_str(), 120, 160, GFXFF); // new street
+  tft.drawString(old_street.c_str(), 140, 130, GFXFF); // old street
+  tft.drawString(street.c_str(), 120, 170, GFXFF); // new street
 #elif defined( TTGO_DISPLAY)
   tft.fillRect(0, 60, 240, 75, TFT_BLACK);
   tft.drawString(old_street.c_str(), 120, 70, GFXFF); // old street
@@ -293,9 +295,10 @@ void showPartialUpdate_dist(uint32_t dist) {
   tft.setFreeFont(MYFONT32);
   tft.setTextColor(TFT_BLACK, TFT_WHITE);
 #if defined( OSW)
-  tft.fillRect(0, 70, 240, 40, TFT_WHITE);
-  tft.setCursor(55, 105);
-  tft.print(dist);
+  tft.fillRect(0, 65, 240, 50, TFT_WHITE);
+  tft.setCursor(55, 113);
+  tft.print(random(10, 300));
+  //  tft.print(dist);
   tft.print("m");
 #elif defined( TTGO_DISPLAY)
   tft.fillRect(80, 0, 160, 60, TFT_WHITE);
@@ -400,7 +403,7 @@ void setup() {
   Serial.println("--");
   attachInterrupt(digitalPinToInterrupt(resetBtn), isr, RISING);
 
-//  littleFSconfig();
+  //  littleFSconfig();
 
   Serial.println("-Init display-");
   tft.init();
