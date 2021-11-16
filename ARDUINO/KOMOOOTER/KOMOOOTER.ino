@@ -280,8 +280,8 @@ void showPartialUpdate_street(std::string street, std::string old_street ) {
   tft.setTextDatum(MC_DATUM);
 #if defined( OSW)
   tft.fillRect(0, 110, 240, 80, TFT_BLACK);
-  tft.drawString(old_street.c_str(), 140, 130, GFXFF); // old street
-  tft.drawString(street.c_str(), 120, 170, GFXFF); // new street
+  tft.drawString(old_street.c_str(), 120, 170, GFXFF); // old street
+  tft.drawString(street.c_str(), 120, 130, GFXFF); // new street
 #elif defined( TTGO_DISPLAY)
   tft.fillRect(0, 60, 240, 75, TFT_BLACK);
   tft.drawString(old_street.c_str(), 120, 70, GFXFF); // old street
