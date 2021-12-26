@@ -13,8 +13,8 @@
 #include "esp_adc_cal.h"
 #include <driver/adc.h>
 
-#define OSW // tft_eSPI >> #include <User_Setups/Setup46_GC9A01_ESP32.h>
-//#define TTGO_DISPLAY  //tft_eSPI >> #include <User_Setups/Setup25_TTGO_T_Display.h>
+//#define OSW // tft_eSPI >> #include <User_Setups/Setup46_GC9A01_ESP32.h>
+#define TTGO_DISPLAY  //tft_eSPI >> #include <User_Setups/Setup25_TTGO_T_Display.h>
 
 #include "rider.h"
 #include "symbols.h"
@@ -35,8 +35,8 @@
 #define menuBtn 10
 #define resetBtn 13
 #elif defined( TTGO_DISPLAY)
-#define batteryPinB 0
-#define battPinB  35
+#define batteryPinB 34 // FIX THIS
+#define battPinB  14
 //Buttons
 #define menuBtn 0
 #define resetBtn 35
@@ -76,7 +76,7 @@ unsigned int raw = 0;
 float volt = 0.0;
 // ESP32 ADV is a bit non-linear
 const float vScale1 = 30; // divider for higher voltage range - OSW
-const float vScale1B = 1000; // divider for higher voltage range -  TTGO DISPLAY
+const float vScale1B = 333; // divider for higher voltage range -  TTGO DISPLAY
 
 int menuSetup = 0;//switch menu
 long interval = 60000;  // interval to display battery voltage
